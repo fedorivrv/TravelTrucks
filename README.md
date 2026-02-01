@@ -9,7 +9,7 @@ This project was implemented as a technical assignment using modern frontend tec
 
 ## 🔗 Demo
 
-- **Live:** (add your Vercel / Netlify link here)
+- **Live:** https://travel-trucks-chi-three.vercel.app/
 - **API:** https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers
 
 ---
