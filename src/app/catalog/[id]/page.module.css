@@ -1,0 +1,22 @@
+.details-section {
+  padding: 48px 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+.loader,
+.error {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.error {
+  color: #e44848;
+}

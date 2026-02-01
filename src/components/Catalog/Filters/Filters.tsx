@@ -10,29 +10,29 @@ const Filters = () => {
   const { getCampers } = useCampersStore();
 
   const handleSearch = () => {
-  const params: CamperFilters = {};
+    const params: CamperFilters = {};
 
-  if (location?.trim()) {
-    params.location = location.trim();
-  }
-
-  if (form) {
-    params.form = form;
-  }
-
-  equipment.forEach((item) => {
-    const key = EQUIPMENT_MAP[item];
-    if (!key) return;
-
-    if (key === "transmission") {
-      params.transmission = "automatic";
-    } else {
-      params[key] = "true";
+    if (location?.trim()) {
+      params.location = location.trim();
     }
-  });
 
-  getCampers(false, params);
-};
+    if (form) {
+      params.form = form;
+    }
+
+    equipment.forEach((item) => {
+      const key = EQUIPMENT_MAP[item];
+      if (!key) return;
+
+      if (key === "transmission") {
+        params.transmission = "automatic";
+      } else {
+        params[key] = "true";
+      }
+    });
+
+    getCampers(false, params);
+  };
 
   return (
     <div className={styles["filters-container"]}>

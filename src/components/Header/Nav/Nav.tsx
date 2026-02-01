@@ -8,7 +8,7 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={styles["nav-conteiner"]}>
+    <nav className={styles["nav-container"]}>
       <ul className={styles["nav-list"]}>
         <li>
           <Link

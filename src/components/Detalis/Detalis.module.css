@@ -1,0 +1,23 @@
+.detalis {
+  padding: 48px 64px 80px 64px;
+}
+.content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 44px;
+  width: 100%;
+}
+
+.tab-content {
+  flex-basis: 631px;
+  flex-shrink: 0;
+}
+
+.form-container {
+  flex-basis: 641px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+}

@@ -1,21 +1,15 @@
 .header {
-  border-bottom: 1px solid var(--color-border);
+  height: 72px;
   background: #fff;
+  border-bottom: 1px solid #f2f4f7;
 }
 
-.inner {
-  height: 72px;
+.header-content {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 64px;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.nav {
-  display: flex;
-  gap: 24px;
 }

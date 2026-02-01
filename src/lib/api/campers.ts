@@ -4,10 +4,8 @@ import type { Camper, CampersResponse } from "../../types/camper";
 export type CampersQuery = {
   page?: number;
   limit?: number;
-
   location?: string;
   form?: string;
-
   AC?: boolean;
   kitchen?: boolean;
   bathroom?: boolean;
