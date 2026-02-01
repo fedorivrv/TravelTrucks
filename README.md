@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TravelTrucks 🚐
 
-## Getting Started
+**TravelTrucks** is a frontend web application for a camper rental company.  
+The application allows users to browse available campers, filter them by various criteria, view detailed camper information, read reviews, and make a booking.
 
-First, run the development server:
+This project was implemented as a technical assignment using modern frontend technologies and best practices.
 
+---
+
+## 🔗 Demo
+- **Live:** (add your Vercel / Netlify link here)
+- **API:** https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers
+
+---
+
+## 🧩 Features
+
+### 🏠 Home Page
+- Hero banner with a primary call to action
+- **View Now** button that navigates to the campers catalog
+
+### 📋 Campers Catalog
+- Display of all available campers
+- **Backend-based filtering** by:
+  - location
+  - vehicle type
+  - availability of air conditioning, kitchen, and other features
+- Ability to add campers to **favorites**
+- Pagination with **Load More** button
+- Navigation to the camper details page via **Show more**
+
+### 🚐 Camper Details Page
+- Detailed camper description and specifications
+- Image gallery
+- Tabs:
+  - **Features** (active by default)
+  - **Reviews** (user reviews with 5-star rating system)
+- Booking form with a success notification after submission
+
+### ⭐ Favorites
+- Add/remove campers from favorites
+- Favorites are persisted after page refresh using `localStorage`
+
+---
+
+## 🛠 Technologies
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Zustand** — global state management
+- **Axios** — API requests
+- **CSS Modules** — styling
+- **MockAPI** — backend for test data
+
+---
+
+## 🧠 Architecture & Approach
+
+- Component-based architecture
+- Global state for:
+  - campers list
+  - filters
+  - favorites
+- Filtering and pagination are handled **exclusively on the backend**
+- Loaders for asynchronous requests
+- Clean and readable code following the **DRY** principle
+
+---
+
+## 📦 Installation & Running Locally
+
+1. Clone the repository:
 ```bash
+git clone https://github.com/fedorivrv/TravelTrucks.git
+
+2. Navigate to the project directory:
+cd TravelTrucks
+
+3. Install dependencies:
+npm install
+
+4. Run the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open in your browser:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Roman Fedoriv
+Frontend Developer
+GitHub: https://github.com/fedorivrv
 
-## Learn More
+Project Status
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✔ Implemented according to the technical requirements
+✔ Backend filtering and pagination
+✔ Ready for review and deployment
