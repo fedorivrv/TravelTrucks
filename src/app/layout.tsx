@@ -5,7 +5,10 @@ import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "TravelTrucks",
-  description: "Rental campers web app",
+  description: "Camper rental service",
+  icons: {
+    icon: "/icons.svg#icon-logo",
+  },
 };
 const inter = Inter({
   subsets: ["latin"],
