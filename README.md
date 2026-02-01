@@ -34,11 +34,11 @@ This project was implemented as a technical assignment using modern frontend tec
 - Image gallery
 - Tabs:
   - **Features** (active by default)
-  - **Reviews** (user reviews with 5-star rating system)
+  - **Reviews** (user reviews with a 5-star rating system)
 - Booking form with a success notification after submission
 
 ### ⭐ Favorites
-- Add/remove campers from favorites
+- Add and remove campers from favorites
 - Favorites are persisted after page refresh using `localStorage`
 
 ---
@@ -57,7 +57,7 @@ This project was implemented as a technical assignment using modern frontend tec
 ## 🧠 Architecture & Approach
 
 - Component-based architecture
-- Global state for:
+- Global state management for:
   - campers list
   - filters
   - favorites
@@ -72,27 +72,40 @@ This project was implemented as a technical assignment using modern frontend tec
 1. Clone the repository:
 ```bash
 git clone https://github.com/fedorivrv/TravelTrucks.git
+```
 
 2. Navigate to the project directory:
+```bash
 cd TravelTrucks
+```
 
 3. Install dependencies:
+```bash
 npm install
+```
 
 4. Run the development server:
+```bash
 npm run dev
+```
 
 5. Open in your browser:
+```text
 http://localhost:3000
+```
 
-Author
+---
 
-Roman Fedoriv
-Frontend Developer
+## 👤 Author
+
+**Roman Fedoriv**  
+Frontend Developer  
 GitHub: https://github.com/fedorivrv
 
-Project Status
+---
 
-✔ Implemented according to the technical requirements
-✔ Backend filtering and pagination
+## ✅ Project Status
+
+✔ Implemented according to the technical requirements  
+✔ Backend filtering and pagination  
 ✔ Ready for review and deployment
