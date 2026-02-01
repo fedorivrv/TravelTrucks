@@ -31,7 +31,7 @@ const Detalis = () => {
             {activeTab === "features" ? (
               <Features camper={currentCamper} />
             ) : (
-              <Reviews reviews={currentCamper.reviews} />
+             <Reviews reviews={currentCamper.reviews ?? []} />
             )}
           </div>
 

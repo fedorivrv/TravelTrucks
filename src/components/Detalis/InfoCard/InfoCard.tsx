@@ -1,19 +1,15 @@
 import Image from "next/image";
 import styles from "./InfoCard.module.css";
+import type { Camper } from "@/types/camper";
 
 interface InfoCardProps {
-  camper: {
-    name: string;
-    price: number;
-    rating: number;
-    location: string;
-    description: string;
-    gallery: { thumb: string; original: string }[];
-    reviews: unknown[];
-  };
+  camper: Camper;
 }
 
 const InfoCard = ({ camper }: InfoCardProps) => {
+  const reviewsCount = camper.reviews?.length ?? 0;
+  const gallery = camper.gallery ?? [];
+
   return (
     <div className={styles["container"]}>
       <h2 className={styles["name"]}>{camper.name}</h2>
@@ -23,10 +19,12 @@ const InfoCard = ({ camper }: InfoCardProps) => {
           <svg width={16} height={16} className={styles["star-icon"]}>
             <use href="/icons.svg#icon-star"></use>
           </svg>
+
           <span className={styles["rating-text"]}>
-            {camper.rating} ({camper.reviews.length} Reviews)
+            {camper.rating} ({reviewsCount} Reviews)
           </span>
         </div>
+
         <div className={styles["location-container"]}>
           <svg width={16} height={16} className={styles["map-icon"]}>
             <use href="/icons.svg#icon-Map"></use>
@@ -37,19 +35,21 @@ const InfoCard = ({ camper }: InfoCardProps) => {
 
       <p className={styles["price"]}>€{camper.price.toFixed(2)}</p>
 
-      <div className={styles["gallery"]}>
-        {camper.gallery.map((img, index) => (
-          <div key={index} className={styles["image-container"]}>
-            <Image
-              src={img.original}
-              alt={`${camper.name} view ${index + 1}`}
-              fill
-              className={styles["image"]}
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-        ))}
-      </div>
+      {gallery.length > 0 && (
+        <div className={styles["gallery"]}>
+          {gallery.map((img, index) => (
+            <div key={index} className={styles["image-container"]}>
+              <Image
+                src={img.original}
+                alt={`${camper.name} view ${index + 1}`}
+                fill
+                className={styles["image"]}
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       <p className={styles["description"]}>{camper.description}</p>
     </div>

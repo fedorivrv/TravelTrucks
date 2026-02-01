@@ -12,7 +12,9 @@ const Card = ({ camper }: CamperProps) => {
   return (
     <article className={styles["card"]}>
       <div className={styles["image-container"]}>
-        <Image src={camper.gallery[0].thumb} alt={camper.name} fill className={styles["image"]} />
+        {camper.gallery?.[0]?.thumb && (
+          <Image src={camper.gallery[0].thumb} alt={camper.name} fill className={styles["image"]} />
+        )}
       </div>
 
       <div className={styles["container"]}>
@@ -36,7 +38,7 @@ const Card = ({ camper }: CamperProps) => {
             <svg width={16} height={16} className={styles["star-icon"]}>
               <use href="/icons.svg#icon-star"></use>
             </svg>
-            {camper.rating}({camper.reviews.length} Reviews)
+            {camper.rating}({camper.reviews?.length ?? 0} Reviews)
           </span>
           <span className={styles["location"]}>
             <svg width={16} height={16} className={styles["map-icon"]}>

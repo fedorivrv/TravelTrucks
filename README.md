@@ -8,6 +8,7 @@ This project was implemented as a technical assignment using modern frontend tec
 ---
 
 ## 🔗 Demo
+
 - **Live:** (add your Vercel / Netlify link here)
 - **API:** https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers
 
@@ -16,10 +17,12 @@ This project was implemented as a technical assignment using modern frontend tec
 ## 🧩 Features
 
 ### 🏠 Home Page
+
 - Hero banner with a primary call to action
 - **View Now** button that navigates to the campers catalog
 
 ### 📋 Campers Catalog
+
 - Display of all available campers
 - **Backend-based filtering** by:
   - location
@@ -30,6 +33,7 @@ This project was implemented as a technical assignment using modern frontend tec
 - Navigation to the camper details page via **Show more**
 
 ### 🚐 Camper Details Page
+
 - Detailed camper description and specifications
 - Image gallery
 - Tabs:
@@ -38,6 +42,7 @@ This project was implemented as a technical assignment using modern frontend tec
 - Booking form with a success notification after submission
 
 ### ⭐ Favorites
+
 - Add and remove campers from favorites
 - Favorites are persisted after page refresh using `localStorage`
 
@@ -70,26 +75,31 @@ This project was implemented as a technical assignment using modern frontend tec
 ## 📦 Installation & Running Locally
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/fedorivrv/TravelTrucks.git
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd TravelTrucks
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
 
 4. Run the development server:
+
 ```bash
 npm run dev
 ```
 
 5. Open in your browser:
+
 ```text
 http://localhost:3000
 ```
