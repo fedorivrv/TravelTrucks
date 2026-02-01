@@ -16,8 +16,8 @@ const Page = () => {
     }
   }, [id, getCamperById]);
 
-  if (isLoading) return <div className={styles['loader']}>Loading camper details...</div>;
-  if (!currentCamper) return <div className={styles['error']}>Camper not found</div>;
+  if (isLoading) return <div className={styles["loader"]}>Loading camper details...</div>;
+  if (!currentCamper) return <div className={styles["error"]}>Camper not found</div>;
 
   return (
     <section className={styles["details-section"]}>
