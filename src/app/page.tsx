@@ -1,9 +1,12 @@
-import styles from "./page.module.css";
+import Home from "../components/Home/Home";
+import css from "./page.module.css";
 
-export default function Home() {
+const Page = () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}></main>
+    <div className={css["page"]}>
+      <Home />
     </div>
   );
-}
+};
+
+export default Page;

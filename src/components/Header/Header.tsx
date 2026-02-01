@@ -1,22 +1,16 @@
-import Link from "next/link";
 import styles from "./Header.module.css";
-import { Container } from "../Container/Container";
+import Logo from "./Logo/Logo";
+import Nav from "./Nav/Nav";
 
-export function Header() {
+const Header = () => {
   return (
-    <header className={styles.header}>
-      <Container>
-        <div className={styles.inner}>
-          <Link href="/" className={styles.logo}>
-            TravelTrucks
-          </Link>
-
-          <nav className={styles.nav}>
-            <Link href="/">Home</Link>
-            <Link href="/catalog">Catalog</Link>
-          </nav>
-        </div>
-      </Container>
+    <header className={styles["header"]}>
+      <div className={styles["header-cont"]}>
+        <Logo />
+        <Nav />
+      </div>
     </header>
   );
-}
+};
+
+export default Header;

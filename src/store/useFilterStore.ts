@@ -1,4 +1,4 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 
 interface FilterState {
   location: string;
@@ -11,9 +11,9 @@ interface FilterState {
 }
 
 export const useFilterStore = create<FilterState>((set) => ({
-  location: '',
+  location: "",
   equipment: [],
-  form: '',
+  form: "",
 
   setLocation: (location) => set({ location }),
 
@@ -26,8 +26,8 @@ export const useFilterStore = create<FilterState>((set) => ({
 
   setForm: (form) =>
     set((state) => ({
-      form: state.form === form ? '' : form,
+      form: state.form === form ? "" : form,
     })),
 
-  resetFilters: () => set({ location: '', equipment: [], form: '' }),
+  resetFilters: () => set({ location: "", equipment: [], form: "" }),
 }));
