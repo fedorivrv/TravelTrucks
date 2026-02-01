@@ -1,0 +1,68 @@
+.catalog {
+  display: flex;
+  gap: 64px;
+  padding: 48px 64px 52px 64px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.more-btn {
+  display: block;
+  margin: 40px auto 0;
+  padding: 16px 32px;
+  background-color: transparent;
+  border: 1px solid #dadde1;
+  border-radius: 200px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #101828;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.more-btn:hover {
+  border-color: #e44848;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #f2f4f7;
+  border-top: 5px solid #e44848;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-results {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 18px;
+  color: #475467;
+}
