@@ -22,7 +22,7 @@ const Page = () => {
   return (
     <section className={styles["details-section"]}>
       <div className="container">
-        <Detalis camper={currentCamper} />
+        <Detalis />
       </div>
     </section>
   );
